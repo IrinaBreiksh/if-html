@@ -1,0 +1,11 @@
+p {
+    text-align: center;
+    padding: 120px 567px 20px 567px;
+}
+
+hr {
+width: 100px;
+height: 4px;
+background-color: orange;
+margin-top: 20px;
+}
