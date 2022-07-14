@@ -1,11 +1,22 @@
 p {
-    text-align: center;
-    padding: 120px 567px 20px 567px;
+  text-align: center;
+  width: 306px;
+  height: 47px;
+  margin: 120px 567px 20px 567px;
 }
-
 hr {
-width: 100px;
-height: 4px;
-background-color: orange;
-margin-top: 20px;
+  width: 98px;
+  height: 2px;
+  background-color: orange;
+  margin-right: auto;
+  margin-left: auto;
+}
+img {
+  width: 100px;
+  height: 100px;
+  margin: 275px 100px 200px 150px;
+}
+div {
+  display: inline-block;
+  margin: 100px 100px 200px 150px;
 }
