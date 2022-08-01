@@ -2,17 +2,21 @@
 
 * {
   margin: 0;
-  /*box-sizing: border-box;*/
+  box-sizing: border-box;
 }
 
-.body {
+body {
   font-family: 'Roboto', sans-serif;
 }
 
-.container-advantage {
+.wrapper{
   max-width: 1440px;
-  height: 449px;
   margin: 0 auto;
+}
+
+.container-advantage {
+  /*max-width: 1440px;*/
+  /*height: 449px;*/
   padding: 120px 16px 0;
 }
 
@@ -22,11 +26,12 @@
   font-size: 40px;
   line-height: 47px;
   color: #383838;
-  }
+}
 
 .advantage-title{
   font-size: 24px;
   font-weight: 400;
+  margin-bottom: 115px;
 }
 
 .row {
@@ -46,25 +51,21 @@
 .advantage-img {
   width: 100px;
   height: 100px;
-  margin: 55px 0 60px;
+  margin: 0 55px 50px;
 }
 
-.advantage-title {
-  margin-bottom: 122px;
-}
-
-hr {
+.highlight {
   width: 100px;
   height: 2px;
   background-color: #f5bd41;
   margin: auto auto 80px;
-}
+  }
 
 .container-footer {
   max-width: 1440px;
-  height: 510px;
+  /*height: 510px;*/
   margin: 0 auto;
-  padding-top: 120px;
+  padding-top: 110px;
   background-color: #10367c;
 }
 
@@ -73,15 +74,15 @@ hr {
   width: 33.333%;
   }
 
-.footer{
-  padding-left: 0 ;
-  padding-bottom: 64px;
+.footer {
+  padding-bottom: 50px;
   align-content: start;
-  margin-left: 104px;
+  margin: 0 104px;
 }
 
-.text-col{
+.text-col {
   font-weight: 400;
+  font-size: 20px;
   line-height: 48px;
   color: #FFFFFF;
 }
@@ -93,7 +94,7 @@ hr {
   color: #FFFFFF;
 }
 
-.text-footer{
+.text-footer {
   margin-left: 104px;
   padding-bottom: 120px;
   font-size: 14px;
