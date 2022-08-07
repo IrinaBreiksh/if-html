@@ -4,14 +4,15 @@
 
 .wrapper{
   box-sizing: border-box;
-  width: 1440px;
+  width: 1232px;
   height: 569px;
   margin: 0 auto;
   background-color: #FFFFFF;
 }
 
 .title{
-  padding: 120px 567px 20px;
+  padding-top: 120px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -22,25 +23,14 @@ hr{
   margin: auto auto;
 }
 
-.advantages{
-  display: inline-block;
-  width: 1440px;
-}
-
-.advantages-img {
-  width: 296px;
-  height: 176px;
-}
-
-.img{
+.advantages-img{
   width: 100px;
   height: 100px;
-  padding-bottom: 52px;
-  margin: 90px 126px 56px;
+  margin: 90px 101px 38px;
 }
 
 .advantages-text{
   display: inline;
   padding-bottom: 120px;
- margin: 152px 122px 120px ;
+  margin: 152px 96px 120px ;
 }
