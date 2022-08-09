@@ -48,6 +48,7 @@ body {
   width: 50px;
   position: absolute;
   bottom: 0;
+  left: 4px;
 }
 
 .header__menu-item {
