@@ -7,6 +7,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  color: #383838;
 }
 
 .svg-sprite {
@@ -22,11 +23,10 @@ body {
 }
 
 .container-top-section {
-  max-width: 1440px;
-  height: 900px;
+  max-width: 100vw;
   margin: 0 auto;
   padding-top: 47px;
-  background: url(../images/castelmezzano-background.png) no-repeat top;
+  background: url(../images/castelmezzano-background.png) no-repeat center;
   background-size: cover;
   color: #ffffff;
 }
@@ -34,12 +34,20 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
+  position: relative;
 }
 
 .header__logo-triphouse {
   width: 205px;
   height: 40px;
+}
+
+.header_highlight {
+  border: 1px solid #f5bd41;
+  width: 50px;
+  position: absolute;
+  bottom: 0;
 }
 
 .header__menu-item {
@@ -63,12 +71,6 @@ body {
   margin-left: 24px;
 }
 
-.header_highlight {
-  border: 1px solid #f5bd41;
-  width: 50px;
-  margin-left: 890px;
-}
-
 .page__title {
   font-weight: 500;
   font-size: 50px;
@@ -82,6 +84,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   text-align: left;
+  margin-bottom: 20px;
 }
 
 .names {
@@ -90,41 +93,45 @@ body {
 }
 
 .page__form-search {
-  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  height: 64px;
+  background-color:#ffffff;
+  border-radius: 8px;
 }
 
 .form-city {
-  width: 463px;
-  height: 64px;
+  width: 37%;
   font-size: 18px;
   border-bottom-left-radius: 8px;
-  border-top-left-radius: 8px;
+  border-color:transparent;
 }
 
 .form-date {
-  width: 248px;
+  width: 22%;
   height: 64px;
   font-size: 18px;
   border-radius: 8px;
-  border: 4px solid #f5bd41;
+  border: 3px solid #f5bd41;
   text-align: center;
 }
 
 .form-room {
-  width: 305px;
-  height: 64px;
+  width: 24%;
   font-size: 18px;
   text-align: center;
+  border-color:transparent;
 }
 
 .form-submit {
   width: 192px;
-  height: 71px;
+  height: 64px;
   font-size: 24px;
   color: #ffffff;
   text-align: center;
   background-color: #3077c6;
   border-radius: 8px;
+  border-color:transparent;
 }
 
 .page__applications {
@@ -162,6 +169,7 @@ body {
   height: 4px;
   background-color: #f5bd41;
   margin: auto auto 80px;
+  border:none;
 }
 
 .advantage-title {
@@ -188,7 +196,6 @@ body {
 
 .container-footer {
   max-width: 1440px;
-  height: 630px;
   margin: 0 auto;
   padding-top: 110px;
   background-color: #10367c;
@@ -202,7 +209,7 @@ body {
 
 .footer__information__col {
   text-align: left;
-  width: 33.333%;
+  width: 33%;
 }
 
 .footer__information__col-name {
