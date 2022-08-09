@@ -1,4 +1,4 @@
-@import url('./fonts.css');
+@import url("./fonts.css");
 
 * {
   margin: 0;
@@ -6,99 +6,221 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-.wrapper{
+.svg-sprite {
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.wrapper {
+  max-width: 1232px;
+  margin: 0 auto;
+}
+
+.container-top-section {
+  max-width: 1440px;
+  height: 900px;
+  margin: 0 auto;
+  padding-top: 47px;
+  background: url(../images/castelmezzano-background.png) no-repeat top;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header__logo-triphouse {
+  width: 205px;
+  height: 40px;
+}
+
+.header__menu-item {
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+  margin-right: 24px;
+  text-decoration: none;
+  align-items: center;
+}
+
+.header__menu-night-icon {
+  width: 32px;
+  height: 40px;
+  margin-left: 24px;
+}
+
+.header__menu-account-circle {
+  width: 41px;
+  height: 40px;
+  margin-left: 24px;
+}
+
+.header_highlight {
+  border: 1px solid #f5bd41;
+  width: 50px;
+  margin-left: 890px;
+}
+
+.page__title {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 59px;
+  margin-bottom: 98px;
+  padding-top: 202px;
+}
+
+.page__names {
+  display: flex;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: left;
+}
+
+.names {
+  margin-left: 24px;
+  margin-right: 199px;
+}
+
+.page__form-search {
+  margin-top: 20px;
+}
+
+.form-city {
+  width: 463px;
+  height: 64px;
+  font-size: 18px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.form-date {
+  width: 248px;
+  height: 64px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 4px solid #f5bd41;
+  text-align: center;
+}
+
+.form-room {
+  width: 305px;
+  height: 64px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.form-submit {
+  width: 192px;
+  height: 71px;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #3077c6;
+  border-radius: 8px;
+}
+
+.page__applications {
+  display: flex;
+  margin: 55px auto;
+  width: 24%;
+}
+
+.page__app-google {
+  width: 135px;
+  height: 40px;
+}
+
+.page__app-store {
+  width: 135px;
+  height: 40px;
+}
+
+.container-advantages {
   max-width: 1440px;
   margin: 0 auto;
 }
 
-.container-advantage {
-  /*max-width: 1440px;*/
-  /*height: 449px;*/
-  padding: 120px 16px 0;
-}
-
-.title {
+.advantages__title {
   text-align: center;
+  margin-top: 120px;
   margin-bottom: 20px;
   font-size: 40px;
   line-height: 47px;
   color: #383838;
 }
 
-.advantage-title{
-  font-size: 24px;
-  font-weight: 400;
-  margin-bottom: 115px;
+.advantages__highlight {
+  width: 100px;
+  height: 4px;
+  background-color: #f5bd41;
+  margin: auto auto 80px;
 }
 
-.row {
+.advantage-title {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 122px;
+}
+
+.advantages__row {
   display: flex;
   gap: 16px;
-  }
+}
 
 .col {
   width: 25%;
   text-align: center;
 }
 
-.advantage-col {
-  text-align: center;
-}
-
 .advantage-img {
   width: 100px;
   height: 100px;
-  margin: 0 55px 50px;
+  margin: 0 55px 45px;
 }
-
-.highlight {
-  width: 100px;
-  height: 2px;
-  background-color: #f5bd41;
-  margin: auto auto 80px;
-  }
 
 .container-footer {
   max-width: 1440px;
-  /*height: 510px;*/
+  height: 630px;
   margin: 0 auto;
   padding-top: 110px;
   background-color: #10367c;
 }
 
-.footer-col {
-  text-align: left;
-  width: 33.333%;
-  }
-
-.footer {
+.footer__information {
+  display: flex;
   padding-bottom: 50px;
   align-content: start;
-  margin: 0 104px;
 }
 
-.text-col {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 48px;
-  color: #FFFFFF;
+.footer__information__col {
+  text-align: left;
+  width: 33.333%;
 }
 
-.text {
+.footer__information__col-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 48px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.text-footer {
-  margin-left: 104px;
+.footer__information__col-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 48px;
+  color: #ffffff;
+}
+
+.footer__triphouse-properties {
   padding-bottom: 120px;
   font-size: 14px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-
-
