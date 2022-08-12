@@ -235,11 +235,6 @@ body {
   width: 100%;
 }
 
-/*.col {*/
-/*  width: 25%;*/
-/*  text-align: center;*/
-/*}*/
-
 .advantages-col{
   text-align: center;
   padding: 0 8px;
@@ -294,7 +289,7 @@ body {
   color: #ffffff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 390px) {
   /* For mobile phones: */
   [class*="col-"] {
     width: 100%;
@@ -326,21 +321,21 @@ body {
 
   .container-footer {
     padding-top: 0;
+    padding-left: 0;
   }
 
   .footer__logo-triphouse{
-    display: initial;
-    margin: 40px 131px;
+    display: block;
+    margin: auto;
   }
 
   .container-footer {
     padding-top: 0;
-    padding-left: 16px;
+    padding-left: 0;
   }
 
   .footer__information__col {
     text-align: center;
-    width: 33%;
   }
 
   .footer__information__col-text {
