@@ -20,7 +20,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1264px;
+  max-width: 1232px;
   padding: 0 16px;
   margin: 0 auto;
 }
@@ -76,52 +76,109 @@ body {
 }
 
 .page__title {
+  margin-top: 25px;
   font-weight: 500;
   font-size: 50px;
   line-height: 59px;
-  margin-bottom: 98px;
+  margin-bottom: 160px;
   padding-top: 202px;
 }
 
-.page__names {
-  display: flex;
-  font-weight: 400;
-  font-size: 18px;
-  text-align: left;
-  margin-bottom: 20px;
-}
-
-.names {
-  margin-left: 24px;
-  margin-right: 199px;
-}
 
 .page__form-search {
   display: flex;
-  justify-content: flex-end;
-  height: 64px;
   background-color: #ffffff;
   border-radius: 8px;
 }
 
-.form-city {
-  width: 37%;
-  font-size: 18px;
-  border-bottom-left-radius: 8px;
-  border-color: transparent;
+.form-search__destination {
+  position: relative;
+  width: 46%;
 }
 
-.form-date {
-  width: 22%;
+.form-search__destination-title{
+  font-weight: 400;
+  font-size: 18px;
+  position: absolute;
+  top: calc(-100% + 15px);
+  left: 24px;
+}
+.form-search__destination-city{
+  /*width: 363px;*/
   height: 64px;
+  font-weight: 400;
+  font-size: 18px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  border-color: transparent;
+  padding-left: 24px;
+}
+
+.form-search__dates {
+  display: flex;
+  width: 26%;
+  height: 64px;
+  font-weight: 500;
   font-size: 18px;
   border-radius: 8px;
   border: 3px solid #f5bd41;
+  /*text-align: center;*/
+  position: relative;
+}
+
+.form-search__date-in {
+  position: relative;
+  /*bottom: 56px;*/
+  left: 24px;
+  top: calc(-115% + 15px)
+}
+
+.form-search__date-out {
+  position: relative;
+  top: calc(-115% + 15px);
+  left: -52px;
+}
+
+.data-1{
+  font-size: 18px;
+  margin-left: -60px;
+  width: 56%;
+  border-color: transparent;
+}
+
+.data-2{
+  margin-left: -138px;
+  width: 50%;
+  border-color: transparent;
+  font-size: 18px;
+}
+
+.form-search__amount{
+  display: flex;
+  width: 34%;
+  font-size: 18px;
   text-align: center;
+  border-color: transparent;
+}
+
+.form-adults {
+  width: 34%;
+  font-size: 18px;
+  text-align: center;
+  border-color: transparent;
+  padding-left: 20px;
+}
+
+.form-children {
+  width: 34%;
+
+  font-size: 18px;
+  text-align: center;
+  border-color: transparent;
 }
 
 .form-room {
-  width: 24%;
+  width: 22%;
   font-size: 18px;
   text-align: center;
   border-color: transparent;
@@ -289,7 +346,7 @@ body {
   color: #ffffff;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 768px) {
   /* For mobile phones: */
   [class*="col-"] {
     width: 100%;
@@ -325,17 +382,15 @@ body {
   }
 
   .footer__logo-triphouse{
+    width: 25%;
+    fill: #ffffff;
     display: block;
-    margin: auto;
-  }
-
-  .container-footer {
-    padding-top: 0;
-    padding-left: 0;
+    margin: 0 auto;
   }
 
   .footer__information__col {
     text-align: center;
+    font-size: 18px;
   }
 
   .footer__information__col-text {
@@ -343,9 +398,9 @@ body {
   }
 
   .footer__triphouse-properties {
-    padding-bottom: 40px;
     font-size: 12px;
     text-align: center;
   }
+
 }
 

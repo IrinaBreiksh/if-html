@@ -346,20 +346,24 @@
             Discover stays <br />
             to live, work or just relax
           </h1>
-          <div class="page__names">
-            <div class="names">Your destination or hotel name</div>
-            <div class="names">Check-in — Check-out</div>
-          </div>
+
+
           <form class="page__form-search">
-            <input type="text" class="form-city" placeholder="New York" /><input
-              type="text"
-              class="form-date"
-              placeholder="Tue 15 Sept — Sat 19 Sept"
-            /><input
-              type="text"
-              class="form-room"
-              placeholder="2 Adults — 0 Children — 1 Room"
-            /><button class="form-submit">Search</button>
+            <div class="form-search__destination">
+              <label class="form-search__destination-title" for="city">Your destination or hotel name</label>
+              <input type="text" class="form-search__destination-city" id="city" placeholder="New York" />
+            </div>
+              <div class="form-search__dates">
+                <label class="form-search__date-in" for="date-in">Check-in</label>
+              <input class="data-1" type="text" id="date-in" placeholder="Tue 15 Sept "/>
+                <label class="form-search__date-out" for="date-out"> — Check-out</label>
+              <input class="data-2" type="text"  id="date-out" placeholder="— Sat 19 Sept"/>
+                </div>
+            <div class="form-search__amount">
+              <input  class="form-adults" type="text" placeholder="2 Adults —"/><input  class="form-children" type="text" placeholder="0 Children —"/><input  class="form-room" type="text" placeholder="1 Room"/>
+            </div>
+
+            <button class="form-submit">Search</button>
           </form>
           <div class="page__applications">
             <svg class="page__applications page__app-google">
