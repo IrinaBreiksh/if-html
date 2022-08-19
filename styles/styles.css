@@ -20,7 +20,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1232px;
+  max-width: 1264px;
   padding: 0 16px;
   margin: 0 auto;
 }
@@ -51,7 +51,11 @@ body {
   width: 50px;
   position: absolute;
   bottom: 0;
-  left: 4px;
+  left: 21px;
+}
+
+.header__menu {
+  display: flex;
 }
 
 .header__menu-item {
@@ -59,6 +63,7 @@ body {
   font-size: 24px;
   color: #ffffff;
   margin-right: 24px;
+  margin-left: 16px;
   text-decoration: none;
   align-items: center;
 }
@@ -75,6 +80,10 @@ body {
   margin-left: 24px;
 }
 
+.header__menu-list {
+  display: none;
+}
+
 .page__title {
   margin-top: 25px;
   font-weight: 500;
@@ -83,7 +92,6 @@ body {
   margin-bottom: 160px;
   padding-top: 202px;
 }
-
 
 .page__form-search {
   display: flex;
@@ -96,14 +104,14 @@ body {
   width: 46%;
 }
 
-.form-search__destination-title{
+.form-search__destination-title {
   font-weight: 400;
   font-size: 18px;
   position: absolute;
   top: calc(-100% + 15px);
   left: 24px;
 }
-.form-search__destination-city{
+.form-search__destination-city {
   /*width: 363px;*/
   height: 64px;
   font-weight: 400;
@@ -130,7 +138,7 @@ body {
   position: relative;
   /*bottom: 56px;*/
   left: 24px;
-  top: calc(-115% + 15px)
+  top: calc(-115% + 15px);
 }
 
 .form-search__date-out {
@@ -139,21 +147,21 @@ body {
   left: -52px;
 }
 
-.data-1{
+.data-1 {
   font-size: 18px;
   margin-left: -60px;
   width: 56%;
   border-color: transparent;
 }
 
-.data-2{
+.data-2 {
   margin-left: -138px;
   width: 50%;
   border-color: transparent;
   font-size: 18px;
 }
 
-.form-search__amount{
+.form-search__amount {
   display: flex;
   width: 34%;
   font-size: 18px;
@@ -171,7 +179,6 @@ body {
 
 .form-children {
   width: 34%;
-
   font-size: 18px;
   text-align: center;
   border-color: transparent;
@@ -292,7 +299,7 @@ body {
   width: 100%;
 }
 
-.advantages-col{
+.advantages-col {
   text-align: center;
   padding: 0 8px;
 }
@@ -302,6 +309,54 @@ body {
   height: 100px;
   margin: 0 0 45px;
 }
+
+.container-homes {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #eaf0f9;
+}
+
+.homes__main-title {
+  text-align: center;
+  padding-top: 120px;
+  margin-bottom: 105px;
+  font-size: 40px;
+  line-height: 47px;
+  color: #383838;
+}
+
+.homes-variants__row {
+  display: flex;
+}
+
+.homes-col {
+  margin-right: 16px;
+  margin-bottom: 24px;
+}
+
+.homes-col:last-child {
+  margin-right: 0;
+}
+
+.homes-img {
+  width: 296px;
+  margin-bottom: 24px;
+}
+
+.homes-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #3077C6;
+  margin-bottom: 24px;
+}
+
+.homes-address {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 151px;
+  color: #BFBFBF;
+}
+
 
 .container-footer {
   max-width: 1440px;
@@ -336,7 +391,7 @@ body {
   color: #ffffff;
 }
 
-.footer__logo-triphouse{
+.footer__logo-triphouse {
   display: none;
 }
 
@@ -352,6 +407,158 @@ body {
     width: 100%;
   }
 
+  .header__logo-triphouse {
+    width: 122px;
+    height: 24px;
+  }
+
+  .header__menu-item {
+    display: none;
+    order: revert;
+  }
+
+  .header__menu-night-icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 24px;
+  }
+
+  .header__menu-account-circle {
+    width: 24px;
+    height: 24px;
+    margin-left: 24px;
+  }
+
+  .header__menu-list {
+    display: initial;
+    order: revert;
+    font-max-size: 24px;
+    font-size: 16px;
+    margin-left: 24px;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .page__title {
+    font-size: 30px;
+    line-height: 33px;
+    padding-top: 52px;
+    margin-bottom: 31px;
+  }
+
+  .page__form-search {
+    display: block;
+    background-color: #f5bd41;
+    border-radius: 8px;
+  }
+
+  .form-search__destination {
+    position: initial;
+    width: 46%;
+  }
+
+  .form-search__destination-title {
+    font-weight: 400;
+    font-size: 18px;
+    position: absolute;
+    top: calc(-100% + 15px);
+    left: 24px;
+  }
+  .form-search__destination-city {
+    /*width: 768px;*/
+    height: 64px;
+    font-weight: 400;
+    font-size: 18px;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    border-color: transparent;
+    padding-left: 24px;
+  }
+
+  .form-search__dates {
+    display: flex;
+    width: 26%;
+    height: 64px;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 3px solid #f5bd41;
+    /*text-align: center;*/
+    position: relative;
+  }
+
+  .form-search__date-in {
+    position: relative;
+    /*bottom: 56px;*/
+    left: 24px;
+    top: calc(-115% + 15px);
+  }
+
+  .form-search__date-out {
+    position: relative;
+    top: calc(-115% + 15px);
+    left: -52px;
+  }
+
+  .data-1 {
+    font-size: 18px;
+    margin-left: -60px;
+    width: 56%;
+    border-color: transparent;
+  }
+
+  .data-2 {
+    margin-left: -138px;
+    width: 50%;
+    border-color: transparent;
+    font-size: 18px;
+  }
+
+  .form-search__amount {
+    display: flex;
+    height: 64px;
+    width: 34%;
+    font-size: 18px;
+    text-align: center;
+    border-color: transparent;
+  }
+
+  .form-adults {
+    width: 34%;
+    font-size: 18px;
+    text-align: center;
+    border-color: transparent;
+    padding-left: 20px;
+  }
+
+  .form-children {
+    width: 34%;
+
+    font-size: 18px;
+    text-align: center;
+    border-color: transparent;
+  }
+
+  .form-room {
+    width: 22%;
+    font-size: 18px;
+    text-align: center;
+    border-color: transparent;
+  }
+
+  .form-submit {
+    width: 192px;
+    height: 64px;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #3077c6;
+    border-radius: 8px;
+    border-color: transparent;
+  }
+
   .advantages__title {
     font-size: 28px;
     text-shadow: 0 3px 3px #383838;
@@ -360,18 +567,18 @@ body {
     margin-bottom: 16px;
   }
 
-  .advantages__highlight{
+  .advantages__highlight {
     display: none;
   }
 
-  .advantages-col{
+  .advantages-col {
     padding: 16px 73px;
   }
 
-  .advantages-col:last-child{
+  .advantages-col:last-child {
     padding-bottom: 40px;
   }
-  .advantage-title{
+  .advantage-title {
     font-size: 15px;
     margin-bottom: 0;
   }
@@ -381,7 +588,7 @@ body {
     padding-left: 0;
   }
 
-  .footer__logo-triphouse{
+  .footer__logo-triphouse {
     width: 25%;
     fill: #ffffff;
     display: block;
@@ -394,13 +601,11 @@ body {
   }
 
   .footer__information__col-text {
-   display: none;
+    display: none;
   }
 
   .footer__triphouse-properties {
     font-size: 12px;
     text-align: center;
   }
-
 }
-
