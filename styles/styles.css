@@ -27,7 +27,7 @@ body {
 .wrapper {
   max-width: 1232px;
   margin: 0 auto;
-  padding: 51px 0 120px;
+  padding: 51px 16px 120px;
 }
 
 .top-section {
@@ -41,7 +41,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
   margin: 0 0;
 }
 
@@ -51,19 +50,12 @@ body {
   fill: #3077C6;
 }
 
-.header_highlight {
-  border: 1px solid #f5bd41;
-  width: 50px;
-  position: absolute;
-  bottom: 0;
-  left: 21px;
-}
-
 .header__menu {
   display: flex;
+  position: relative;
 }
 
-.header__menu-item {
+.header__menu-item1 {
   font-weight: 400;
   font-size: 24px;
   color: #ffffff;
@@ -71,6 +63,34 @@ body {
   margin-left: 16px;
   text-decoration: none;
   align-items: center;
+  position: relative;
+}
+
+.header_highlight1:hover {
+  border: 1px solid #f5bd41;
+  width: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 21px;
+}
+
+.header__menu-item2 {
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+  margin-right: 24px;
+  margin-left: 16px;
+  text-decoration: none;
+  align-items: center;
+  position: relative;
+}
+
+.header_highlight2:hover{
+  border: 1px solid #f5bd41;
+  width: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 145px;
 }
 
 .header__menu-night-icon {
@@ -134,13 +154,11 @@ body {
   font-size: 18px;
   border-radius: 8px;
   border: 3px solid #f5bd41;
-  /*text-align: center;*/
   position: relative;
 }
 
 .form-search__date-in {
   position: relative;
-  /*bottom: 56px;*/
   left: 24px;
   top: calc(-115% + 15px);
 }
@@ -208,7 +226,7 @@ body {
 
 .page__applications {
   display: flex;
-  margin: 120px auto 0;
+  margin:70px auto 0;
   width: 24%;
 }
 
@@ -222,20 +240,25 @@ body {
   height: 40px;
 }
 
+.advantages-section{
+  position: relative;
+}
+
 .advantages__title {
   text-align: center;
   margin-bottom: 20px;
   font-size: 40px;
   line-height: 47px;
   color: #383838;
+
 }
 
 .advantages__highlight {
+  position: absolute;
   width: 100px;
   height: 4px;
-  background-color: #f5bd41;
-  margin: auto auto 80px;
-  border: none;
+  border: 2px solid #f5bd41;
+  left: 670px;
 }
 
 .advantage-title {
@@ -246,6 +269,7 @@ body {
 .advantages__row {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 80px;
 }
 
 .col-1 {
@@ -313,7 +337,6 @@ body {
 
 .homes__main-title {
   text-align: center;
-  padding-top: 120px;
   margin-bottom: 105px;
   font-size: 40px;
   line-height: 47px;
@@ -398,6 +421,10 @@ body {
     width: 100%;
   }
 
+  .wrapper{
+
+  }
+
   .header__logo-triphouse {
     width: 122px;
     height: 24px;
@@ -423,9 +450,14 @@ body {
   .header__menu-list {
     display: initial;
     order: revert;
-    font-max-size: 24px;
-    font-size: 16px;
     margin-left: 24px;
+  }
+
+  .line1, .line2, .line3{
+    width: 24px;
+    height: 3px;
+    background-color: #eaf0f9;
+    margin: 4px 0;
   }
 
   hr {
