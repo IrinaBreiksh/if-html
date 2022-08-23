@@ -52,7 +52,6 @@ body {
 
 .header__menu {
   display: flex;
-  position: relative;
 }
 
 .header__menu-item1 {
@@ -66,12 +65,15 @@ body {
   position: relative;
 }
 
-.header_highlight1:hover {
+.header__menu-item1:hover:after {
+  content: '';
+  display: block;
   border: 1px solid #f5bd41;
   width: 50px;
   position: absolute;
-  bottom: 0;
-  left: 21px;
+  right: 4px;
+  top: 115%;
+  background: transparent;
 }
 
 .header__menu-item2 {
@@ -82,15 +84,18 @@ body {
   margin-left: 16px;
   text-decoration: none;
   align-items: center;
-  position: relative;
+position: relative;
 }
 
-.header_highlight2:hover{
+.header__menu-item2:hover:after {
+  content: '';
+  display: block;
   border: 1px solid #f5bd41;
   width: 50px;
   position: absolute;
-  bottom: 0;
-  left: 145px;
+  right: 36px;
+  top: 115%;
+  background: transparent;
 }
 
 .header__menu-night-icon {
@@ -371,7 +376,6 @@ body {
 .homes-address {
   font-size: 24px;
   font-weight: 400;
-
   color: #bfbfbf;
 }
 
