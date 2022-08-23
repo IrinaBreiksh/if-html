@@ -430,7 +430,7 @@ body {
     height: 24px;
   }
 
-  .header__menu-item {
+  .header__menu-item1, .header__menu-item2 {
     display: none;
     order: revert;
   }
