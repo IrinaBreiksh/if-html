@@ -68,7 +68,7 @@ body {
   right: 50%;
   top: 115%;
   background: #f5bd41;
-  transform: translate(50%,0);
+  transform: translate(50%, 0);
 }
 
 .header__menu-night-icon {
@@ -227,7 +227,7 @@ body {
 }
 
 .advantages__title:hover:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 100px;
@@ -391,6 +391,14 @@ body {
   color: #ffffff;
 }
 
+@media (max-width: 830px) {
+  /* For tablets: */
+  .advantage-title {
+    font-size: 22px;
+    font-weight: 400;
+  }
+}
+
 @media (max-width: 768px) {
   /* For mobile phones: */
   [class*="col-"] {
@@ -455,6 +463,10 @@ body {
   .container-footer {
     padding-top: 0;
     padding-left: 0;
+  }
+
+  .footer-section {
+    padding-top: 0;
   }
 
   .footer__logo-triphouse {
