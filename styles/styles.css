@@ -20,12 +20,12 @@ body {
 }
 
 .container {
-  width: 1440px;
+  max-width: 1440px;
   padding: 120px 104px;
 }
 
 .wrapper {
-  max-width: 1232px;
+  max-width: 1264px;
   margin: 0 auto;
   padding: 51px 16px 120px;
 }
@@ -47,55 +47,28 @@ body {
 .header__logo-triphouse {
   width: 205px;
   height: 40px;
-  fill: #3077C6;
+  fill: #3077c6;
 }
 
-.header__menu {
-  display: flex;
-}
-
-.header__menu-item1 {
+.header__menu-item {
   font-weight: 400;
   font-size: 24px;
   color: #ffffff;
-  margin-right: 24px;
-  margin-left: 16px;
+  margin-right: 20px;
   text-decoration: none;
-  align-items: center;
   position: relative;
 }
 
-.header__menu-item1:hover:after {
-  content: '';
+.header__menu-item:hover:after {
+  content: "";
   display: block;
-  border: 1px solid #f5bd41;
+  border: 2px solid #f5bd41;
   width: 50px;
   position: absolute;
-  right: 4px;
+  right: 50%;
   top: 115%;
-  background: transparent;
-}
-
-.header__menu-item2 {
-  font-weight: 400;
-  font-size: 24px;
-  color: #ffffff;
-  margin-right: 24px;
-  margin-left: 16px;
-  text-decoration: none;
-  align-items: center;
-position: relative;
-}
-
-.header__menu-item2:hover:after {
-  content: '';
-  display: block;
-  border: 1px solid #f5bd41;
-  width: 50px;
-  position: absolute;
-  right: 36px;
-  top: 115%;
-  background: transparent;
+  background: #f5bd41;
+  transform: translate(50%,0);
 }
 
 .header__menu-night-icon {
@@ -110,16 +83,15 @@ position: relative;
   margin-left: 24px;
 }
 
-.header__menu-list {
+.header__menu-icon {
   display: none;
 }
 
 .page__title {
-  margin-top: 25px;
   font-weight: 500;
   font-size: 50px;
   line-height: 59px;
-  margin-bottom: 160px;
+  margin-bottom: 145px;
   padding-top: 202px;
 }
 
@@ -131,7 +103,7 @@ position: relative;
 
 .form-search__destination {
   position: relative;
-  width: 46%;
+  width: 48%;
 }
 
 .form-search__destination-title {
@@ -139,7 +111,7 @@ position: relative;
   font-size: 18px;
   position: absolute;
   top: calc(-100% + 15px);
-  left: 24px;
+  left: 25px;
 }
 .form-search__destination-city {
   height: 64px;
@@ -148,7 +120,7 @@ position: relative;
   border-bottom-left-radius: 8px;
   border-top-left-radius: 8px;
   border-color: transparent;
-  padding-left: 24px;
+  padding-left: 27px;
 }
 
 .form-search__dates {
@@ -164,20 +136,20 @@ position: relative;
 
 .form-search__date-in {
   position: relative;
-  left: 24px;
+  left: 18px;
   top: calc(-115% + 15px);
 }
 
 .form-search__date-out {
   position: relative;
   top: calc(-115% + 15px);
-  left: -52px;
+  left: -65px;
 }
 
 .data-1 {
   font-size: 18px;
   margin-left: -60px;
-  width: 56%;
+  width: 60%;
   border-color: transparent;
 }
 
@@ -190,14 +162,14 @@ position: relative;
 
 .form-search__amount {
   display: flex;
-  width: 34%;
+  width: 32%;
   font-size: 18px;
   text-align: center;
   border-color: transparent;
 }
 
 .form-adults {
-  width: 34%;
+  width: 35%;
   font-size: 18px;
   text-align: center;
   border-color: transparent;
@@ -212,14 +184,14 @@ position: relative;
 }
 
 .form-room {
-  width: 22%;
+  width: 23%;
   font-size: 18px;
   text-align: center;
   border-color: transparent;
 }
 
 .form-submit {
-  width: 192px;
+  width: 240px;
   height: 64px;
   font-size: 24px;
   color: #ffffff;
@@ -230,9 +202,8 @@ position: relative;
 }
 
 .page__applications {
-  display: flex;
-  margin:70px auto 0;
-  width: 24%;
+  margin: 120px auto 0;
+  text-align: center;
 }
 
 .page__app-google {
@@ -241,12 +212,9 @@ position: relative;
 }
 
 .page__app-store {
-  width: 135px;
-  height: 40px;
-}
-
-.advantages-section{
-  position: relative;
+  width: 125px;
+  height: 38px;
+  padding-left: 16px;
 }
 
 .advantages__title {
@@ -255,15 +223,19 @@ position: relative;
   font-size: 40px;
   line-height: 47px;
   color: #383838;
-
+  position: relative;
 }
 
-.advantages__highlight {
+.advantages__title:hover:after {
+  content: '';
+  display: block;
   position: absolute;
   width: 100px;
   height: 4px;
-  border: 2px solid #f5bd41;
-  left: 670px;
+  border: 1px solid #f5bd41;
+  right: 47%;
+  top: 67px;
+  background: #f5bd41;
 }
 
 .advantage-title {
@@ -380,7 +352,7 @@ position: relative;
 }
 
 .footer-section {
-  width: 1440px;
+  width: 100vw;
   padding-top: 69px;
   background-color: #10367c;
 }
@@ -425,16 +397,12 @@ position: relative;
     width: 100%;
   }
 
-  .wrapper{
-
-  }
-
   .header__logo-triphouse {
     width: 122px;
     height: 24px;
   }
 
-  .header__menu-item1, .header__menu-item2 {
+  .header__menu-item {
     display: none;
     order: revert;
   }
@@ -451,136 +419,13 @@ position: relative;
     margin-left: 24px;
   }
 
-  .header__menu-list {
+  .header__menu-icon {
     display: initial;
     order: revert;
     margin-left: 24px;
-  }
-
-  .line1, .line2, .line3{
     width: 24px;
-    height: 3px;
-    background-color: #eaf0f9;
-    margin: 4px 0;
-  }
-
-  hr {
-    display: none;
-  }
-
-  .page__title {
-    font-size: 30px;
-    line-height: 33px;
-    padding-top: 52px;
-    margin-bottom: 31px;
-  }
-
-  .page__form-search {
-    display: block;
-    background-color: #f5bd41;
-    border-radius: 8px;
-  }
-
-  .form-search__destination {
-    position: initial;
-    width: 100%;
-  }
-
-  .form-search__destination-title {
-    font-weight: 400;
-    font-size: 18px;
-    position: absolute;
-    top: calc(-100% + 15px);
-    left: 24px;
-  }
-  .form-search__destination-city {
-    /*width: 768px;*/
-    height: 64px;
-    font-weight: 400;
-    font-size: 18px;
-    border-bottom-left-radius: 8px;
-    border-top-left-radius: 8px;
-    border-color: transparent;
-    padding-left: 24px;
-  }
-
-  .form-search__dates {
-    display: flex;
-    width: 100%;
-    height: 64px;
-    font-weight: 500;
-    font-size: 18px;
-    border-radius: 8px;
-    border: 3px solid #f5bd41;
-    position: relative;
-  }
-
-  .form-search__date-in {
-    position: relative;
-    left: 24px;
-    top: calc(-115% + 15px);
-  }
-
-  .form-search__date-out {
-    position: relative;
-    top: calc(-115% + 15px);
-    left: -52px;
-  }
-
-  .data-1 {
-    font-size: 18px;
-    margin-left: -60px;
-    width: 56%;
-    border-color: transparent;
-  }
-
-  .data-2 {
-    margin-left: -138px;
-    width: 50%;
-    border-color: transparent;
-    font-size: 18px;
-  }
-
-  .form-search__amount {
-    display: flex;
-    height: 64px;
-    width: 100%;
-    font-size: 18px;
-    text-align: center;
-    border-color: transparent;
-  }
-
-  .form-adults {
-    width: 100%;
-    font-size: 18px;
-    text-align: center;
-    border-color: transparent;
-    padding-left: 20px;
-  }
-
-  .form-children {
-    width: 100%;
-    font-size: 18px;
-    text-align: center;
-    border-color: transparent;
-  }
-
-  .form-room {
-    width: 22%;
-    font-size: 18px;
-    text-align: center;
-    border-color: transparent;
-  }
-
-  .form-submit {
-    width: 100%;
-    height: 64px;
-    font-size: 24px;
-    color: #ffffff;
-    text-align: center;
-    background-color: #3077c6;
-    border-radius: 8px;
-    border-color: transparent;
+    height: 16px;
+    fill: #eaf0f9;
   }
 
   .advantages__title {

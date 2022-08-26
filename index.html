@@ -322,26 +322,36 @@
         />
       </symbol>
     </svg>
+    <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="menu" viewBox="0 0 32 24">
+        <path
+          d="M4 16h24v-2.667H4V16Zm0-6.667h24V6.667H4v2.666ZM4 0v2.667h24V0H4Z"
+          fill="#eaf0f9"
+        />
+        <path
+          d="M27.5 13.833V15.5h-23v-1.667h23Zm0-6.666v1.666h-23V7.167h23Zm0-5h-23V.5h23v1.667Z"
+          stroke="#000"
+        />
+      </symbol>
+    </svg>
     <div class="top-section">
       <div class="wrapper">
         <div class="top-section__header">
           <svg class="top-section__header header__logo-triphouse">
             <use href="#logo-triphouse" />
           </svg>
-          <div class="top-section__header header__menu">
-            <a href="#" class="header__menu-item1">Stays</a>
-            <a href="#" class="header__menu-item2">Attractions</a>
+          <div class="top-section__header">
+            <a href="#" class="header__menu-item">Stays</a>
+            <a href="#" class="header__menu-item">Attractions</a>
             <svg class="header__menu-night-icon">
               <use href="#night-icon" />
             </svg>
             <svg class="header__menu-account-circle">
               <use href="#account-circle" />
             </svg>
-            <div class="header__menu-list">
-             <div class="line1"></div>
-              <div class="line2"></div>
-              <div class="line3"></div>
-            </div>
+            <svg class="header__menu-icon">
+              <use href="#menu" />
+            </svg>
           </div>
         </div>
         <div class="top-section__page">
@@ -367,7 +377,7 @@
                 class="data-1"
                 type="text"
                 id="date-in"
-                placeholder="Tue 15 Sept "
+                placeholder="Tue 15 Sept —"
               />
               <label class="form-search__date-out" for="date-out">
                 — Check-out</label
@@ -376,7 +386,7 @@
                 class="data-2"
                 type="text"
                 id="date-out"
-                placeholder="— Sat 19 Sept"
+                placeholder=" Sat 19 Sept"
               />
             </div>
             <div class="form-search__amount">
@@ -393,45 +403,42 @@
             <button class="form-submit">Search</button>
           </form>
           <div class="page__applications">
-            <svg class="page__applications page__app-google">
+            <svg class="page__app-google">
               <use href="#app-google" />
             </svg>
-            <svg class="page__applications page__app-store">
+            <svg class="page__app-store">
               <use href="#app-store" />
             </svg>
           </div>
         </div>
       </div>
     </div>
-    <div class="advantages-section">
-      <div class="container">
-        <h2 class="advantages__title">What do we offer</h2>
-        <hr class="advantages__highlight" />
-        <div class="advantages__row advantage">
-          <div class="col-3 advantages-col">
-            <svg class="advantage-img">
-              <use href="#support" />
-            </svg>
-            <h4 class="advantage-title">Support 24/7</h4>
-          </div>
-          <div class="col-3 advantages-col">
-            <svg class="advantage-img">
-              <use href="#communication" />
-            </svg>
-            <h4 class="advantage-title">Communicate directly</h4>
-          </div>
-          <div class="col-3 advantages-col">
-            <svg class="advantage-img">
-              <use href="#booking" />
-            </svg>
-            <h4 class="advantage-title">Book online</h4>
-          </div>
-          <div class="col-3 advantages-col">
-            <svg class="advantage-img">
-              <use href="#reviews" />
-            </svg>
-            <h4 class="advantage-title">Real guest reviews</h4>
-          </div>
+    <div class="container">
+      <h2 class="advantages__title">What do we offer</h2>
+      <div class="advantages__row advantage">
+        <div class="col-3 advantages-col">
+          <svg class="advantage-img">
+            <use href="#support" />
+          </svg>
+          <h4 class="advantage-title">Support 24/7</h4>
+        </div>
+        <div class="col-3 advantages-col">
+          <svg class="advantage-img">
+            <use href="#communication" />
+          </svg>
+          <h4 class="advantage-title">Communicate directly</h4>
+        </div>
+        <div class="col-3 advantages-col">
+          <svg class="advantage-img">
+            <use href="#booking" />
+          </svg>
+          <h4 class="advantage-title">Book online</h4>
+        </div>
+        <div class="col-3 advantages-col">
+          <svg class="advantage-img">
+            <use href="#reviews" />
+          </svg>
+          <h4 class="advantage-title">Real guest reviews</h4>
         </div>
       </div>
     </div>
