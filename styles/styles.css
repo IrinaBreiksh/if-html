@@ -135,27 +135,26 @@ body {
 }
 
 .form-search__date-in {
-  position: relative;
-  left: 18px;
-  top: calc(-115% + 15px);
+  position: absolute;
+  top: -86%;
+  left: 8%;
 }
 
 .form-search__date-out {
-  position: relative;
-  top: calc(-115% + 15px);
-  left: -65px;
+  position: absolute;
+  top: -89%;
+  left: 37%;
 }
+
 
 .data-1 {
   font-size: 18px;
-  margin-left: -60px;
-  width: 60%;
+  width: 54%;
   border-color: transparent;
 }
 
 .data-2 {
-  margin-left: -138px;
-  width: 50%;
+  width: 51%;
   border-color: transparent;
   font-size: 18px;
 }
@@ -233,9 +232,10 @@ body {
   width: 100px;
   height: 4px;
   border: 1px solid #f5bd41;
-  right: 47%;
-  top: 67px;
+  right: 50%;
+  top: 140%;
   background: #f5bd41;
+  transform: translate(50%, 0);
 }
 
 .advantage-title {
@@ -246,7 +246,7 @@ body {
 .advantages__row {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 80px;
+  margin-top: 103px;
 }
 
 .col-1 {
@@ -489,5 +489,15 @@ body {
   .footer__triphouse-properties {
     font-size: 12px;
     text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  .advantages-col {
+     padding: 16px 0;
   }
 }
